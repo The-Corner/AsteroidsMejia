@@ -10,7 +10,7 @@ void setup () {
   screensizex = round(displayWidth*0.90);
   screensizey = round(displayHeight*0.90);
   size(screensizex, screensizey);
-  startscreenbg = loadImage ("startbg2.jpg");
+  startscreenbg = loadImage ("startbg3.jpg");
   instructions = loadImage ("instructions.jpg");
   image (startscreenbg, 0, 0, screensizex, screensizey);
 }
@@ -30,6 +30,9 @@ void draw () {
   // if statement to make stage with instructions appear 
   if (stage == 2) {
     image (instructions, 0, 0, screensizex, screensizey);
+    if (key == ' ') {
+      stage = 3;
+    }
   }
   //if statement to make stage with game: start game
   if (stage == 3) {
