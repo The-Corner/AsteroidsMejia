@@ -1,4 +1,4 @@
-PImage startscreenbg, instructions;
+PImage startscreenbg, instructions, gameOver;
 PFont startscreenfont;
 // initializing the intergers for screen size
 // initializing stages for the game to go through ie: startscreen, level 1, level 2...
@@ -12,6 +12,7 @@ void setup () {
   size(screensizex, screensizey);
   startscreenbg = loadImage ("startbg3.jpg");
   instructions = loadImage ("instructions.jpg");
+  gameOver = loadImage ("gameOver.jpg");
   image (startscreenbg, 0, 0, screensizex, screensizey);
 }
 
